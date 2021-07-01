@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <STYLE>A {text-decoration: none;} </STYLE>
+    <head>
+        <link rel="stylesheet" href="CSS/estilos.css">
+        <link href="Imagens/Icone.ico"/>
+        <title>Restaurante Galápagos</title>
+        <meta charset="UTF-8">
+    </head>
+
+    <body>
+        <!--Inicio do cabeçalho-->
+        <ul id="ul-cabecalho">
+            <li id="li-cabecalho-logo"><a href="index.html"><img id="logo-cabecalho" src="imagens/logo.png"/></a></li>
+            <li id="li-cabecalho-selecionado"><a href="contato.html">Contato</a></li>
+            <li id="li-cabecalho"><a href="sobrenos.html">Sobre Nós</a></li>
+            <li id="li-cabecalho"><a href="produto.html">Produto</a></li>
+            <li id="li-cabecalho"><a href="plano.html">Plano</a></li>
+        </ul>
+        <!--Fim do cabeçalho-->
+
+        <!--Inicio do Formulario-->
+        <table
+        align="center"
+        width="80%"
+        border="2"
+        cellspacing="20"
+        cellpadding="20"
+        style="background-color:transparent;">
+            <!--Mensagem do topo-->
+            <tr style="background-color:#f8c1e6;">
+                <th colspan="2">    
+                    <h2>Fale Conosco</h2>
+                </th>
+            </tr>
+            <tr style="background-color:#f8c1e6;">
+                <td>
+                    <table align="center" width="100%" border="0" cellpadding="20" cellspacing="0" >
+                        <!--Inserir Nome e email-->
+                        <tr style="background-color:#f8c1e6;" height=100%>
+                            <th>
+                                <form> 
+                                    Nome:
+                                    <input type="text" name="nome" placeholder="Insira seu nome aqui"/>
+                                </form>
+                                <br>
+                                <form> 
+                                    Email:
+                                    <input type="text" name="email" placeholder="exemplo@exemplo.com"/>
+                                </form>
+                                <br>
+                                <form> 
+                                    Phone:
+                                    <input type="tel" name="telefone" placeholder="Seu numero"/>
+                                </form>
+                            </th>
+                        </tr>
+                        <!--Escolher Assunto-->
+                        <tr style="background-color:#f8c1e6;">
+                            <th>
+                                <form> 
+                                Assunto <br> <br>
+                                    <select name="assunto">
+                                        <option value="C">Crítica</option>
+                                        <option value="S">Sugestão</option>
+                                        <option value="D">Duvida</option>
+                                    </select>
+                                </form>
+                            </th>
+                        </tr>
+                    </table>
+                </td>
+                <td width="50%">
+                    <table align="center" width="100%" border="0" cellpadding="20" cellspacing="0">
+
+                        <!--Marcar como conheceu-->
+                        <tr style="background-color:#f8c1e6;">
+                            <th>
+                                <form>
+                                    Como nos conheceu? <br> <br>
+                                    <input type="radio" name="conheceu" value="whatsapp"> Whatsapp
+                                    <input type="radio" name="conheceu" value="facebook"> Redes Sociais
+                                    <input type="radio" name="conheceu" value="indicacao"> Indicação
+                                </form>
+                            </th>
+                        </tr>
+
+                        <!--Marcar como prefere ser atendido-->
+                        <tr style="background-color:#f8c1e6;">
+                            <th>
+                                <form>
+                                    Prefiro ser atendido <br> <br>
+                                    <input type="checkbox" name="atendido"/>
+                                    Via Whatsapp
+                                    <input type="checkbox" name="atendido"/>
+                                    Via Telefone
+                                    <input type="checkbox" name="atendido"/>
+                                    Via Email
+                                </form>
+                            </th>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <!--Mensagem do cliente-->
+            <tr style="background-color:#f8c1e6;">
+                <th colspan="2">
+                    <form>
+                        Informe a mensagem <br> <br>
+                        <textarea cols="120" rows="10">
+                        </textarea>
+                    </form>
+                    <form>
+                        <input type="submit" value="Enviar">
+                    </form>
+                </th>
+            </tr>
+        </table>  
+        <!--Fim do Formulario-->
+    </body>
+</html>
