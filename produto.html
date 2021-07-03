@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
-    <STYLE>A {text-decoration: none;} </STYLE>
     <head>
         <link rel="stylesheet" href="CSS/estilos.css">
+        <link rel="stylesheet" href="CSS/cabecalho.css">
         <link href="imagens/icone.ico"/>
         <title>Restaurante Galápagos</title>
         <meta charset="UTF-8">
@@ -12,37 +12,38 @@
         <!--Inicio do cabeçalho-->
         <ul id="ul-cabecalho">
             <li id="li-cabecalho-logo"><a href="index.html"><img id="logo-cabecalho" src="imagens/logo.png"/></a></li>
-            <li id="li-cabecalho"><a href="contato.html">Contato</a></li>
-            <li id="li-cabecalho"><a href="sobrenos.html">Sobre Nós</a></li>
-            <li id="li-cabecalho-selecionado"><a href="produto.html">Produto</a></li>
-            <li id="li-cabecalho"><a href="plano.html">Plano</a></li>
+            <li id="li-cabecalho"><a href="contato.html"><p id="p-cabecalho">Contato</p></a></li>
+            <li id="li-cabecalho"><a href="sobrenos.html"><p id="p-cabecalho">Sobre Nós</p></a></li>
+            <li id="li-cabecalho"><a href="produto.html"><p id="p-cabecalho">Produto</p></a></li>
+            <li id="li-cabecalho"><a href="plano.html"><p id="p-cabecalho">Plano</p></a></li>
         </ul>
         <!--Fim do cabeçalho-->
 
         <!--Inicio Produtos-->
-        <center><h2>Produtos:</h2></center>
+        <div id="div-imagem">
+        <p id="p-titulo">Produtos:</p>
         <table>
             <tr>
-                <td width=800>
+                <td id="td-produto">
                     <ul>
                         <li>
-                            <h3>Produto Tio Patinhas:</h3>
-                            <p>
+                            <p id="p-item">Produto Tio Patinhas:</p>
+                            <p id="p-produtos">
                             Comprar múltiplas máquinas que conseguem imprimir imagens em comida,
                             o cliente manda a imagem que ele quer por um app, e a imagem sai na comida dele.
                             </p>
                         </li>
                         <li>
-                            <h3>Produto Futurista:</h3>
-                            <p>
+                            <p id="p-item">Produto Futurista:</p>
+                            <p id="p-produtos">
                                 Criar uma impressora 3d de comida, assim a comida pode ser do jeito que o cliente quiser,
                                 no app, o cliente teria o modelo 3d da comida que poderá editar (aumentando, esticando,
                                 mudando a cor, fazendo o formato que quiser, etc)
                             </p>
                         </li>
                         <li>
-                            <h3>Produto Viável 1:</h3>
-                            <p>
+                            <p id="p-item">Produto Viável 1:</p>
+                            <p id="p-produtos">
                                 App/site em que a pessoa pede a comida, e pode escolher a cor dos componentes da comida.
                                 Ex: quero hambúrguer roxo, o cliente coloca hambúrguer roxo no app, na hora de fazer o alimento,
                                 o cozinheiro vê o pedido no app, e lá tem que o cliente quer hambúrguer roxo, assim ele só precisa
@@ -50,8 +51,8 @@
                             </p>
                         </li>
                         <li>
-                            <h3>Produto Viável 2:</h3>
-                            <p>
+                            <p id="p-item">Produto Viável 2:</p>
+                            <p id="p-produtos">
                                 App/site em que a pessoa pede a comida, e pode fazer uma customização mais complicada dela,
                                 Ex: quero que tenha um pikachu desenhado no meu arroz, o cliente desenha o pikachu no app,
                                 o cozinheiro vê o pedido pelo app, e cria a refeição da maneira que o cliente quer.
@@ -59,48 +60,20 @@
                         </li>
                     </ul>
                 </td>
-                <td>
-                    <img height=500 width=600 src="Imagens/graficoprodutos.png"/>
+                <td id="td-produto">
+                    <img id=img-produto src="Imagens/graficoprodutos.png"/>
                 </td>
             </tr>
         </table>
-
-        <!--
-        <ul>
-            <li>
-                <h3>Produto Tio Patinhas:</h3>
-                <p>
-                Comprar múltiplas máquinas que conseguem imprimir imagens em comida, <br>
-                o cliente manda a imagem que ele quer por um app, e a imagem sai na comida dele.
-                </p>
-            </li>
-            <li>
-                <h3>Produto Futurista:</h3>
-                <p>
-                    Criar uma impressora 3d de comida, assim a comida pode ser do jeito que o cliente quiser, <br>
-                    no app, o cliente teria o modelo 3d da comida que poderá editar (aumentando, esticando,<br>
-                    mudando a cor, fazendo o formato que quiser, etc)
-                </p>
-            </li>
-            <li>
-                <h3>Produto Viável 1:</h3>
-                <p>
-                    App/site em que a pessoa pede a comida, e pode escolher a cor dos componentes da comida.<br>
-                    Ex: quero hambúrguer roxo, o cliente coloca hambúrguer roxo no app, na hora de fazer o alimento,<br>
-                    o cozinheiro vê o pedido no app, e lá tem que o cliente quer hambúrguer roxo, assim ele só precisa<br>
-                    colocar o corante comestível roxo no hambúrguer.
-                </p>
-            </li>
-            <li>
-                <h3>Produto Viável 2:</h3>
-                <p>
-                    App/site em que a pessoa pede a comida, e pode fazer uma customização mais complicada dela,<br>
-                    Ex: quero que tenha um pikachu desenhado no meu arroz, o cliente desenha o pikachu no app,<br>
-                    o cozinheiro vê o pedido pelo app, e cria a refeição da maneira que o cliente quer.
-                </p>
-            </li>
+        </div>
+        <!--Rodapé-->
+        <ul id="ul-rodape">
+            <li id="li-rodape"><p>Integrantes:</p></li>
+            <li id="li-rodape"><p>Lucas Henrique</p></li>
+            <li id="li-rodape"><p>Laura Martins</p></li>
+            <li id="li-rodape"><p>Sarah Fernandes</p></li>
+            <li id="li-rodape"><p>Iury Santos</p></li>
+            <li id="li-rodape"><p>Ana Carolina</p></li>
         </ul>
-        <br>
-        -->
     </body>
 </html>

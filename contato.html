@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
-    <STYLE>A {text-decoration: none;} </STYLE>
     <head>
         <link rel="stylesheet" href="CSS/estilos.css">
+        <link rel="stylesheet" href="CSS/cabecalho.css">
         <link href="Imagens/Icone.ico"/>
         <title>Restaurante Galápagos</title>
         <meta charset="UTF-8">
@@ -12,14 +12,65 @@
         <!--Inicio do cabeçalho-->
         <ul id="ul-cabecalho">
             <li id="li-cabecalho-logo"><a href="index.html"><img id="logo-cabecalho" src="imagens/logo.png"/></a></li>
-            <li id="li-cabecalho-selecionado"><a href="contato.html">Contato</a></li>
-            <li id="li-cabecalho"><a href="sobrenos.html">Sobre Nós</a></li>
-            <li id="li-cabecalho"><a href="produto.html">Produto</a></li>
-            <li id="li-cabecalho"><a href="plano.html">Plano</a></li>
+            <li id="li-cabecalho"><a href="contato.html"><p id="p-cabecalho">Contato</p></a></li>
+            <li id="li-cabecalho"><a href="sobrenos.html"><p id="p-cabecalho">Sobre Nós</p></a></li>
+            <li id="li-cabecalho"><a href="produto.html"><p id="p-cabecalho">Produto</p></a></li>
+            <li id="li-cabecalho"><a href="plano.html"><p id="p-cabecalho">Plano</p></a></li>
         </ul>
         <!--Fim do cabeçalho-->
 
-        <!--Inicio do Formulario-->
+        <div id="div-formulario">
+            <p id="p-titulo">Contato:</p>
+            <table id="table-formulario">
+                <tr>
+                    <td id="td-formulario">
+                        <label id="formulario">Nome:</label><br>
+                        <input type="text" id="nome_cliente" class="input-texto"/><br>
+                        <label id="formulario">Email:</label><br>
+                        <input type="email" id="email_cliente" class="input-texto"/><br>
+                        <label id="formulario">Telefone:</label><br>
+                        <input type="tel" id="tel_cliente" class="input-texto"/><br>
+                    </td>
+                    <td id="td-formulario">
+                        <label id="formulario">Do que se trata sua mensagem?</label><br>
+                        <select>
+                            <option value="S">Sugestão</option>
+                            <option value="E">Elogio</option>
+                            <option value="C">Crítica</option>
+                            <option value="D">Duvida</option>
+                        </select><br>
+                        <label id="formulario">Como nos conheceu?</label><br>
+                            <input type="radio" name="conheceu" class="input-radio" value="whatsapp">
+                            <label id="formulario-radio">Whatsapp</label><br>
+                            <input type="radio" name="conheceu" class="input-radio" value="facebook">
+                            <label id="formulario-radio">Redes Sociais</label><br>
+                            <input type="radio" name="conheceu" class="input-radio" value="indicacao">
+                            <label id="formulario-radio">Indicação</label><br><br>
+                        
+                        <label id="formulario">Prefiro ser atendido:</label><br>
+                            <input class="input-radio" type="checkbox" name="atendido"/>
+                            <label id="formulario-radio" for="atendido">Via Whatsapp</label><br>
+                            <input class="input-radio" type="checkbox" name="atendido"/>
+                            <label id="formulario-radio" for="atendido">Via Telefone</label><br>
+                            <input class="input-radio" type="checkbox" name="atendido"/>
+                            <label id="formulario-radio" for="atendido">Via Email</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="td-formulario">
+                        <label id="formulario">Deixe sua mensagem:</label><br><br>
+                        <textarea cols="34" rows="10"></textarea>
+                    </td>
+                    <td id="td-formulario">
+                        <br><br><br>
+                        <button>Enviar</button>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+
+        <!--Inicio do Formulario
         <table
         align="center"
         width="80%"
@@ -27,39 +78,36 @@
         cellspacing="20"
         cellpadding="20"
         style="background-color:transparent;">
-            <!--Mensagem do topo-->
             <tr style="background-color:#f8c1e6;">
                 <th colspan="2">    
-                    <h2>Fale Conosco</h2>
+                    <p id="p-titulo">Fale Conosco</h2>
                 </th>
             </tr>
             <tr style="background-color:#f8c1e6;">
                 <td>
                     <table align="center" width="100%" border="0" cellpadding="20" cellspacing="0" >
-                        <!--Inserir Nome e email-->
                         <tr style="background-color:#f8c1e6;" height=100%>
                             <th>
                                 <form> 
-                                    Nome:
+                                    <p>Nome:</p>
                                     <input type="text" name="nome" placeholder="Insira seu nome aqui"/>
                                 </form>
                                 <br>
                                 <form> 
-                                    Email:
+                                    <p>Email:</p>
                                     <input type="text" name="email" placeholder="exemplo@exemplo.com"/>
                                 </form>
                                 <br>
                                 <form> 
-                                    Phone:
+                                    <p>Telefone:</p>
                                     <input type="tel" name="telefone" placeholder="Seu numero"/>
                                 </form>
                             </th>
                         </tr>
-                        <!--Escolher Assunto-->
                         <tr style="background-color:#f8c1e6;">
                             <th>
                                 <form> 
-                                Assunto <br> <br>
+                                    <p>Assunto</p>
                                     <select name="assunto">
                                         <option value="C">Crítica</option>
                                         <option value="S">Sugestão</option>
@@ -73,7 +121,6 @@
                 <td width="50%">
                     <table align="center" width="100%" border="0" cellpadding="20" cellspacing="0">
 
-                        <!--Marcar como conheceu-->
                         <tr style="background-color:#f8c1e6;">
                             <th>
                                 <form>
@@ -85,17 +132,16 @@
                             </th>
                         </tr>
 
-                        <!--Marcar como prefere ser atendido-->
                         <tr style="background-color:#f8c1e6;">
                             <th>
                                 <form>
-                                    Prefiro ser atendido <br> <br>
+                                    <p>Prefiro ser atendido por:</p>
+                                    <label for="atendido">Via Whatsapp</label>
+                                    <input type="checkbox" name="atendido"/><br><br>
+                                    <label for="atendido">Via Telefone</label>
+                                    <input type="checkbox" name="atendido"/><br><br>
+                                    <label for="atendido">Via Email</label>
                                     <input type="checkbox" name="atendido"/>
-                                    Via Whatsapp
-                                    <input type="checkbox" name="atendido"/>
-                                    Via Telefone
-                                    <input type="checkbox" name="atendido"/>
-                                    Via Email
                                 </form>
                             </th>
                         </tr>
@@ -103,7 +149,6 @@
                 </td>
             </tr>
 
-            <!--Mensagem do cliente-->
             <tr style="background-color:#f8c1e6;">
                 <th colspan="2">
                     <form>
@@ -116,7 +161,16 @@
                     </form>
                 </th>
             </tr>
-        </table>  
-        <!--Fim do Formulario-->
+        </table> 
+        Fim do Formulario-->
+        <!--Rodapé-->
+        <ul id="ul-rodape">
+            <li id="li-rodape"><p>Integrantes:</p></li>
+            <li id="li-rodape"><p>Lucas Henrique</p></li>
+            <li id="li-rodape"><p>Laura Martins</p></li>
+            <li id="li-rodape"><p>Sarah Fernandes</p></li>
+            <li id="li-rodape"><p>Iury Santos</p></li>
+            <li id="li-rodape"><p>Ana Carolina</p></li>
+        </ul>
     </body>
 </html>

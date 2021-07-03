@@ -3,66 +3,162 @@ body {
     margin: 0;
 	padding: 0;
 	border: 0;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
-div {
-    height: 100%;
+#div-texto{
     width: 60%;
+    height: 100%;
     padding-top: 0%;
-    color: white;
-    background-color:rgb(15, 8, 58);
+    color: #000000;
+    background-color:#f8c1e683;
     padding: 5%;
     margin-left: 15%;
 }
 
-p {
-    font-family:Arial, Helvetica, sans-serif;
+#div-imagem{
+    width: 80%;
+    height: 100%;
+    padding-top: 0px;
+    margin-top: 0px;
+    color: #000000;
+    background-color:#f8c1e683;
+    padding: 5%;
+    margin-left: 5%;
 }
 
-#p-titulo{
+#div-formulario {
+    width: 60%;
+    height: 100%;
+    padding-top: 0px;
+    color: #000000;
+    background-color:#f8c1e683;
+    padding: 5%;
+    margin-left: 15%;
+}
+
+#lousa {
+    width: 100%;
+}
+
+#p-titulo {
     font-size:x-large;
     text-align: center;
+    margin-top: 0px;
 }
 
-#ul-cabecalho {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color:#f8c1e6;
-}
-
-#li-cabecalho-logo {
-    float: left;
-    display: block;
+#p-subtitulo {
+    font-size: larger;
     text-align: center;
-    padding: 5px 5px;
-    text-decoration: none;
 }
-  
-#li-cabecalho {
-    float: left;
-    display: block;
-    color:#310049;
+
+#p-item {
+    font-weight: bolder;
+}
+
+#p-produtos{
+    text-align: justify;
+}
+
+#img-mapa {
+    width: 100%;
+}
+
+#img-produto {
+    width: 500px;
+    height: 400px;
+}
+
+#td-produto{
+    width: 50%;
+    padding: 10px;
+}
+
+
+#table-formulario{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+#td-formulario{
+    text-align-last: left;
+    height: 100%;
+    width: 50%;
+    margin: 0px;
+    padding-left: 5x;
+    padding-right: 5x;
+    vertical-align: 0px;
+}
+
+.input-texto {
+    padding: 10px;
+    width: 250px;
+    margin-bottom: 40px;
+    margin-top: 10px;
+    border-radius: 100px;
+    border: 2px solid #00A170;
+    outline: none;
+}
+
+.input-texto:focus{
+    -webkit-transition: 0.5s;
+    border: 2px solid #000000;
+}
+
+#formulario {
+    font-size:larger;
+    font-weight: bolder;
+}
+
+select {
+    width: 120px;
+    padding: 10px;
+    margin-bottom: 40px;
+    margin-top: 10px;
+    border-radius: 100px;
+    border: 2px solid #00A170;
+    outline: none;
+}
+
+select:focus {
+    -webkit-transition: 0.5s;
+    border: 2px solid #000000;
+}
+
+.input-radio{
+    height: 20px;
+    width: 20px;
+    border: 2px solid #00A170;
+    border-radius: 50%;
+}
+
+#formulario-radio {
+    font-size: 20px;
+}
+
+textarea{
+    padding: 10px;
+    resize: none;
+    border-radius: 30px;
+    border: 2px solid #00A170;
+    outline: none;
+}
+
+textarea:focus {
+    -webkit-transition: 0.5s;
+    border: 2px solid #000000;
+}
+
+
+
+button{
+    background-color: #ffffff;
+    border: 2px solid #00A170;
+    border-radius: 30px;
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
     text-align: center;
-    padding: 20px 20px;
-    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
 }
-  
-#li-cabecalho-selecionado {
-    float: left;
-    display: block;
-    color:#310049;
-    text-align: center;
-    padding: 20px 20px;
-    background-color: rgb(255, 255, 255);
-}
-
-#logo-cabecalho{
-    height: 40px;
-}
-
-#titulo{
-    align-self: center;
-}
-
